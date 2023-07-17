@@ -8,10 +8,13 @@ body{
 }
 .Container{
     display: flex;
-    padding-top: 40px;
+    position: absolute;
+    left: 40px;
 }
 #clock{
     width: 200px;
+    margin: 5px;
+    margin-left: 2%;
 }
 .Container1{
     display: flex;
@@ -20,13 +23,18 @@ body{
     padding-left: 50px;
     gap: 10px;  
 }
+.Container2{
+position: relative;
+left: 5%;
+}
 #group{
     display: flex;
     flex-direction: column;
 background-color: white;
  color:#3D087BDE ;
-height: 300px;
-width: 460px;
+ padding: 10px;
+height: 360px;
+width: 580px;
 padding:5px;
 }
 .below-class{
@@ -99,29 +107,33 @@ gap: 40px;
      font-weight: bold;
  }
 #morning{
-    width: 210px;
+    width: 250px;
+    height: 50px;
     display: flex;
     justify-content: flex-end;
 }
 #lunch{
-    width: 210px;
+    width: 250px;
+    height: 50px;
     display: flex;
     justify-content: flex-end; 
 }
 #nap{
-    width: 210px;
+    width: 250px;
+    height: 50px;
     display: flex;
     justify-content: flex-end;  
 }
 #night1{
-    width: 210px;
+    width: 250px;
+    height: 50px;
     display: flex;
     justify-content: flex-end;
 }
 #gn{
     padding-top: 20px;
     height: 60px;
-    width: 460px;
+    width: 580px;
     background-color: #C539B4;
     opacity: 25%;
 }
@@ -166,6 +178,7 @@ button:hover:before{
 .set-text{
     position: relative;
     top: -35px;
+    left: 92px;
     display: flex;
     flex-direction: column;
     padding: 8px;
@@ -180,8 +193,8 @@ button:hover:before{
 
 .empty1{
     position: relative;
-    left: 30%;
-    top: -10%;
+  left: -100%;
+    top: 20%;
     height: 120px;
     width: 250px;
     opacity: 35%;
@@ -190,8 +203,8 @@ button:hover:before{
 }
 .empty2{
     position: relative;
-    left: 25%;
-    top: -33%;
+    right:110%;
+    top: -5%;
     height: 130px;
     width: 300px;
     opacity: 80%;
@@ -203,13 +216,13 @@ button:hover:before{
 }
 .empty3{
     height: 100px;
-    width: 500px;
+    width: 550px;
     background-color: azure;
     border-radius: 20px;
     color: #8E53F0;
-    position: relative;
-    top: -28%;
-    left: 5%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
 }
 #displaytext{
      font-size: x-large; 
@@ -230,10 +243,10 @@ button:hover:before{
     justify-content: center;
     background-color: white;
     position: relative;
-    top: 2%;
+    top: 5%;
     left: 5%;
     height:150px;
-    width: 500px;
+    width: 600px;
     color: #6e168b ;
     justify-content: center;
     text-align: center;
@@ -343,68 +356,20 @@ button:hover:before{
 #am{
     font-size:1em;
 }
+#ChangePhoto{
+position: absolute;
+top: 25%;
+left: 53%;
+height: 400px;
+}
 /* mobile view*/
 @media screen and (min-width: 360px) and (max-width: 720px){
 
+   
     .Container{
         display: flex;
-        flex-direction: column;
-        padding-left: 1px;
-      
-    }
-    #group{
-    height: 350px;
-    min-width: 320px;
-    }
-    .Container2{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 5%;
-        
-    }
-    .Container3{
-        display: flex;
-        flex-direction: column;
-        width: 400px;
-    } 
-    .empty1{
-        position: absolute;
-        top: 42%;
-    }
-     .empty2{
-        position: absolute;
-        top: 30%;
-    }
-    .empty3{
-        position: absolute;
-        top: 125%; 
-     
-    }
-    #img{
-        position: absolute;
-        top: 198%;
-        left: 8%;
-    }
-    .alaram{
-        
-        font-size: 1em;
-    }
-    .set-text{
-        font-size: 0.6em;
-    }
-    #gnn{
-        display: flex;
-         padding: 10px; 
-        justify-content:space-between;
-    }
-}
-/* tab view*/
-@media screen and (min-width: 720px) and (max-width: 900px){
-
-    .Container{
-        display: flex;
-        flex-direction: column;
+       flex-direction: column;
+       margin: 10px;
       
     }
     .Container2{
@@ -414,6 +379,32 @@ button:hover:before{
         left: 3%;
         
     }
+    .clock{
+        position: absolute;
+        top: -30%;
+    }
+    .Container1{
+      position: absolute;
+      top: -20%;
+        
+        
+    }
+   .group{
+        position: absolute;
+        top: 450px;
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    .after-gn{
+position: absolute;
+top: 960px;
+    }
+    
+    .t1{
+        position: absolute;
+      
+    }
     .Container3{
         display: flex;
         flex-direction: column;
@@ -421,33 +412,122 @@ button:hover:before{
     } 
     .empty1{
         position: absolute;
-        top: 45%;
-        left: 25%;
+        top: 13%;
+        left: 35%;
     }
      .empty2{
         position: absolute;
-        top: 30%;
-        left: 20%;
+        top: 7%;
+        left: 30%;
     }
     .empty3{
         position: absolute;
-        top: 130%; 
+        top: 210px; 
+        left: 10%;
     }
     #img{
         position: absolute;
         top: 205%;
         left: 8%;
     }
-    /* .alaram{
-        
-        font-size: 1em;
+    #ChangePhoto{
+        position: relative;
+        left: 40px;
     }
-    .set-text{
-        font-size: 0.6em;
-    } */
+  #gn{
+    position: absolute;
+    top: 840px;
+  }
      #gnn{
+        position: absolute;
+        top: 840px;
         display: flex;
+        width: 400px;
         padding: 10px;
-        justify-content: space-between;
+        justify-content: space-between; 
+    } 
+}
+/* tab view*/
+@media screen and (min-width: 720px) and (max-width: 1000px){
+
+    .Container{
+        display: flex;
+       flex-direction: column;
+       margin: 10px;
+      
+    }
+    .Container2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 3%;
+        
+    }
+    .clock{
+        position: absolute;
+        top: -30%;
+    }
+    .Container1{
+      position: absolute;
+      top: -20%;
+        
+        
+    }
+   .group{
+        position: absolute;
+        top: 450px;
+        display: flex;
+        flex-direction: column;
+        
+    } 
+    .after-gn{
+position: absolute;
+top: 960px;
+    }
+    
+    .t1{
+        position: absolute;
+      
+    }
+    .Container3{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    } 
+    .empty1{
+        position: absolute;
+        top: 13%;
+        left: 35%;
+    }
+     .empty2{
+        position: absolute;
+        top: 7%;
+        left: 30%;
+    }
+    .empty3{
+        position: absolute;
+        top: 210px; 
+        left: 10%;
+    }
+    #img{
+        position: absolute;
+        top: 205%;
+        left: 8%;
+    }
+    #ChangePhoto{
+        position: relative;
+        left: 40px;
+    }
+  #gn{
+    position: absolute;
+    top: 840px;
+  }
+     #gnn{
+        position: absolute;
+        top: 840px;
+        display: flex;
+        width: 400px;
+        padding: 10px;
+        justify-content: space-between; 
     } 
 }
