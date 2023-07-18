@@ -9,7 +9,7 @@ body{
 .Container{
     display: flex;
     position: absolute;
-    left: 40px;
+    left: 5px;
 }
 #clock{
     width: 200px;
